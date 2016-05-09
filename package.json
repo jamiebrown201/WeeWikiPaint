@@ -1,0 +1,23 @@
+{
+  "name": "weewikipaint",
+  "version": "1.0.0",
+  "description": "collaborative drawing project using TDD",
+  "main": "server.js",
+  "dependencies": {
+    "jake": "^8.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiebrown201/WeeWikiPaint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamiebrown201/WeeWikiPaint/issues"
+  },
+  "homepage": "https://github.com/jamiebrown201/WeeWikiPaint#readme"
+}
