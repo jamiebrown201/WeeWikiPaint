@@ -20,6 +20,7 @@ Engineering Tasks:
 
 
 To Do on current task:
-- choose framework
-- Abstract it
-- Swap out a different framework to make sure abstraction works
+
+
+Future ideas:
+- Abstract  test framework

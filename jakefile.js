@@ -3,7 +3,7 @@
     "use strict";
 
     desc("Build and test");
-    task("default", ["lint"]);
+    task("default", ["lint", "test"]);
 
     function nodeLintOptions() {
         return {
@@ -28,7 +28,6 @@
     desc("Lint everything");
     task("lint", [], function() {
         var lint = require("./build/lint/lint_runner.js");
-
         var files = new jake.FileList();
         files.include("**/*.js");
         files.exclude("node_modules");
@@ -40,8 +39,11 @@
     desc("Test everything");
     task("test", [], function() {
        var reporter = require("nodeunit").reporters.minimal;
-        reporter.run(['src/server/_server_test.js']);
-    });
+        reporter.run(['src/server/_server_test.js'], null, function(failures) {
+           if(failures) fail("Tests failed");
+            complete();
+        });
+    }, {async: true});
 
     desc("Integrate");
     task("integrate", ["default"], function() {
