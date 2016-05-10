@@ -20,4 +20,7 @@ Engineering Tasks:
 
 
 To Do on current task:
--make build fail when Lint fails
+
+
+Future ideas:
+- Abstract  test framework
