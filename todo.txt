@@ -20,4 +20,6 @@ Engineering Tasks:
 
 
 To Do on current task:
--make build fail when Lint fails
+- choose framework
+- Abstract it
+- Swap out a different framework to make sure abstraction works

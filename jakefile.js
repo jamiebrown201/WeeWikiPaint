@@ -37,6 +37,11 @@
         if (!passed) fail("Lint failed");
     });
 
+    desc("Test everything");
+    task("test", [], function() {
+       console.log("test goes here");
+    });
+
     desc("Integrate");
     task("integrate", ["default"], function() {
         console.log("1. Make sure 'git status' is clean.");
